@@ -32,9 +32,9 @@ function validacion() {
     let slicedEmail = ev.split('@');
 
     if (ev.includes('@') && slicedEmail.length <= 2 && slicedEmail[1].includes('.')){
-        email.classList.remove('este correo no es valido')
+        email.textContent.remove('este correo no es valido')
     } else{
-        email.classList.add('este correo no es valido')
+        email.textContent.add('este correo no es valido')
     }
 }
 
