@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./JS/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Mini Proyecto</title>
+    <style>
+        /* ESTILOS MOBILE */
+        .img-fluid {
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+
+        p {
+            margin-left: 40px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .checkbox1>svg {
+            margin-left: 40px;
+            margin-top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .checkbox1 {
+            display: flex;
+            margin-right: 30px;
+        }
+
+        .checkbox2>svg {
+            margin-left: 40px;
+            margin-top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .checkbox2 {
+            display: flex;
+        }
+
+        .checkbox3 {
+            display: flex;
+        }
+
+        .checkbox3>svg {
+            margin-left: 40px;
+            margin-top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .p1 {
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+
+        .p2 {
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+
+        .p3 {
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+        }
+
+
+        input {
+            margin-left: 30px;
+            margin-bottom: 25px;
+            height: 50px;
+            width: 90%;
+            border-radius: 7px;
+            border: solid gray 1px;
+        }
+
+        button {
+            margin-left: 30px;
+            margin-bottom: 30px;
+            height: 50px;
+            width: 90%;
+            border-radius: 7px;
+            background-color: #232742;
+            color: white;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ESTILOS MODAL MOBILE */
+
+        .modal {
+            position: absolute;
+            width: 575px;
+            height: 1080px;
+            background-color: white;
+            display: grid;
+            place-content: start;
+        }
+
+        .modal_content>img {
+            margin-left: 40px;
+            margin-top: 200px;
+            width: 100px;
+            height: 100px;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        .modal_content>button {
+            margin-top: 250px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .modal_content>h1 {
+            font-size: 70px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #ff576e, #ff644d);
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        /* ESTILOS DE DESKTOP */
+        .container-fluid {
+            height: 648px;
+            display: grid;
+            place-content: center;
+            align-items: center;
+
+        }
+
+
+        .card {
+            width: 50%;
+            height: 60%;
+            border-radius: 15px;
+        }
+
+        .imagen {
+            width: 95%;
+            height: 345px;
+            justify-content: end;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 900px;
+            height: 750px;
+            background-color: #36384e;
+        }
+
+
+        .header-desktop h1 {
+            margin-left: 20px;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+
+        .header-desktop p {
+            margin-top: 15px;
+            margin-left: 20px;
+            font-size: 8px;
+            margin-bottom: 15px;
+        }
+
+        .paragraps-desktop {
+            margin-left: 20px;
+        }
+
+        .paragraps-desktop img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .paragraps-desktop p {
+            font-size: 10px;
+            margin-top: 0;
+            margin-bottom: 5px;
+            margin-left: 8px;
+        }
+
+        .checkbox1-desktop {
+            display: flex;
+        }
+
+        .checkbox2-desktop {
+            display: flex;
+        }
+
+        .checkbox3-desktop {
+            display: flex;
+        }
+
+        .body-desktop {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .card-desktop {
+            background-color: white;
+            border-radius: 15px;
+            width: 600px;
+            height: 390px;
+        }
+
+        .form {
+            height: 200px;
+        }
+
+        .form>h4 {
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 8px;
+        }
+
+        .form input {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            width: 240px;
+            height: 40px;
+            border-radius: 10px;
+            border: solid gray .5px;
+            font-size: 10px;
+        }
+
+        .form button {
+            margin-left: 20px;
+            width: 240px;
+            height: 40px;
+            border-radius: 10px;
+            border: solid gray .5px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+        /* ESTILOS MODAL DESKTOP */
+        .modal_content-desktop {
+            width: 400px;
+            height: 400px;
+            border: solid 1px gray;
+            background-color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .modal_content-desktop>img {
+            margin-top: 25px;
+            margin-left: 35px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .modal_content-desktop h1 {
+            font-size: 40px;
+        }
+
+        .modal_content-desktop p {
+            font-size: 13px;
+        }
+
+        .modal_content-desktop button {
+            margin-top: 10px;
+            width: 330px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .modal_content-desktop button:hover {
+            background: linear-gradient(to right, #ff576e, #ff644d);
+            cursor: pointer;
+        }
+
+        .body-modal {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #36384e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hidden2 {
+            display: none;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <!-- MODAL MOBILE -->
+    <div class="container p-0 d-sm-none d-md-none">
+        <div class="modal hidden" id="modal">
+            <div class="modal_content">
+                <img src="./images/modal.png" alt="palomita naranja">
+                <h1>Thanks for subscribing!</h1>
+                <p>
+                    A confirmation email has been sent to <span>ash@loremcompany.com.</span> Please open it and <br>
+                    click the button inside to confirm your <br>
+                    subscription.
+                </p>
+                <button type="button" id="closeModal">Dismiss message</button>
+            </div>
+        </div> <!-- TERMINA MODAL MOBILE -->
+
+
+
+
+
+        <!-- DISEÑO MOBILE -->
+        <div class="body-mobile d-sm-none">
+            <div class="container_header d-flex justify-content-center w-100">
+                <header>
+                    <img src="./images/mobile.png" class="img-fluid" alt="Diseño Mobile">
+            </div>
+            </header>
+            <main>
+                <h1>Stay Updated!</h1>
+                <p>
+                    Join 60,000+ product managers receiving <br>
+                    monthly updates on:
+                </p>
+            </main>
+            <section>
+                <div class="paragraps">
+                    <div class="checkbox1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                            <defs>
+                                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF6A3A" />
+                                    <stop offset="100%" stop-color="#FF527B" />
+                                </linearGradient>
+                            </defs>
+                            <g fill="none">
+                                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                                <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+                            </g>
+                        </svg>
+                        <p class="p1">
+                            Product discovery and building what <br>
+                            matters
+                        </p>
+                    </div>
+                    <div class="checkbox2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                            <defs>
+                                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF6A3A" />
+                                    <stop offset="100%" stop-color="#FF527B" />
+                                </linearGradient>
+                            </defs>
+                            <g fill="none">
+                                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                                <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+                            </g>
+                        </svg>
+                        <p class="p2">
+                            Measuring to ensure updates are a <br>
+                            success
+                        </p>
+                    </div>
+                    <div class="checkbox3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                            <defs>
+                                <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF6A3A" />
+                                    <stop offset="100%" stop-color="#FF527B" />
+                                </linearGradient>
+                            </defs>
+                            <g fill="none">
+                                <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                                <path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285" />
+                            </g>
+                        </svg>
+                        <p class="p3">
+                            And much more!
+                        </p>
+                    </div>
+                </div>
+                <h4>Email address</h4>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="  email@company.com">
+                    <span class="error_message"></span>
+                    <button type="button" id="toggleModal">Subscribe to monthly newsletter</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <!-- TERMINA DISEÑO MOBILE -->
+
+    <!-- MODAL DESKTOP  -->
+    <div class="container2 d-none d-sm-none d-md-flex">
+        <div class="body-modal hidden2" id="modalDesk">
+            <div class="modal_content-desktop ">
+                <img src="./images/modal.png" alt="palomita naranja">
+                <h1>Thanks for subscribing!</h1>
+                <p>
+                    A confirmation email has been sent to <span>ash@loremcompany.com.</span> Please open it and click
+                    <br> the button inside to confirm your subscription.
+                </p>
+                <button type="button" id="closeDesk">Dismiss message</button>
+            </div>
+        </div>
+
+
+        <!-- TERMINA MODAL DESKTOP -->
+
+
+
+        <!-- EMPIEZA DISEÑO DESKTOP -->
+
+
+        <div class="body-desktop">
+            <div class="background d-none d-sm-none d-md-flex">
+                <div class="container-fluid d-none d-sm-none d-md-flex">
+                    <div class="card-desktop">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <header class="header-desktop">
+                                        <h1>Stay Updated!</h1>
+                                        <p>
+                                            Join 60,000+ product managers receiving monthly <br>
+                                            updates on:
+                                        </p>
+                                    </header>
+                                    <div class="paragraps-desktop">
+                                        <div class="checkbox1-desktop">
+                                            <img src="./images/modal.png" alt="palomita naranja">
+                                            <p class="p1">
+                                                Product discovery and building what matters
+                                            </p>
+                                        </div>
+                                        <div class="checkbox2-desktop">
+                                            <img src="./images/modal.png" alt="palomita naranja">
+                                            <p class="p2">
+                                                Measuring to ensure updates are a success
+                                            </p>
+                                        </div>
+                                        <div class="checkbox3-desktop">
+                                            <img src="./images/modal.png" alt="palomita naranja">
+                                            <p class="p3">
+                                                And much more!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <h4>Email address</h4>
+                                        <form>
+                                            <input type="email" name="email" id="emailD" placeholder="  email@company.com">
+                                            <span class="error_message"></span>
+                                            <button type="button" id="toggleModalDesk">Subscribe to monthly
+                                                newsletter</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="imagen" src="./images/desktop.png" class="img-fluid rounded-start"
+                                    alt="logo desktop">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
