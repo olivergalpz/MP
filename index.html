@@ -99,6 +99,7 @@
 
         input {
             margin-left: 30px;
+            margin-top: 10px;
             margin-bottom: 25px;
             height: 50px;
             width: 90%;
@@ -257,13 +258,6 @@
             height: 200px;
         }
 
-        .form>h4 {
-            margin-left: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-size: 8px;
-        }
-
         .form input {
             margin-left: 20px;
             margin-bottom: 10px;
@@ -342,7 +336,40 @@
             display: none;
         }
 
-    
+        .error_message {
+            color: red;
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+            font-size: 10px;
+        }
+
+        .label-m{
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+        }
+        h4{
+            height: 0px;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 8px;
+        }
+        .invalid{
+            border: solid 2px red;
+            background-color: rgba(255, 0, 0, 0.175);
+        }
+        .error_message_desk{
+            color: red;
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -436,10 +463,10 @@
                         </p>
                     </div>
                 </div>
-                <h4>Email address</h4>
+                <label class="label-m" for="email">Email address:</label>
                 <form>
-                    <input type="email" name="email" id="email" placeholder="  email@company.com">
                     <span class="error_message"></span>
+                    <input type="email" name="email" id="email" class="invalid" placeholder="  email@company.com">
                     <button type="button" id="toggleModal">Subscribe to monthly newsletter</button>
                 </form>
             </section>
@@ -452,7 +479,7 @@
     <div class="container2 d-none d-sm-flex d-md-flex">
         <div class="body-modal hidden2" id="modalDesk">
             <div class="modal_content-desktop ">
-                <img src="./images/modal.png" alt="palomita naranja">
+                <img src="./images/modal.png d-sm-none" alt="palomita naranja">
                 <h1>Thanks for subscribing!</h1>
                 <p>
                     A confirmation email has been sent to <span>ash@loremcompany.com.</span> Please open it and click
@@ -505,10 +532,10 @@
                                         </div>
                                     </div>
                                     <div class="form">
-                                        <h4>Email address</h4>
+                                        <h4 for="email">Email address</h4>
                                         <form>
-                                            <input type="email" name="email" id="emailD" placeholder="  email@company.com">
-                                            <span class="error_message"></span>
+                                            <span class="error_message_desk"></span>
+                                            <input type="email" name="email" id="emailD" class="invalid" placeholder="  email@company.com">
                                             <button type="button" id="toggleModalDesk">Subscribe to monthly
                                                 newsletter</button>
                                         </form>
@@ -520,7 +547,6 @@
                                 <img class="imagen" src="./images/desktop.png" class="img-fluid rounded-start"
                                     alt="logo desktop">
                             </div>
-
                         </div>
                     </div>
                 </div>
